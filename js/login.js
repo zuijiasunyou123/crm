@@ -1,3 +1,5 @@
+
+//登录功能
 $(".submit").click(async function(){
     let account =$(".userName").val().trim()
     let password =$(".userPass").val().trim()
@@ -5,6 +7,7 @@ $(".submit").click(async function(){
     if (account == ""|| password ==""){
         return alert("账号密码不能为空~")
     }
+    
     password = md5(password)
 
 
